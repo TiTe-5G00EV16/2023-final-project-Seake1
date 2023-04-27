@@ -109,7 +109,7 @@ function Register({ history }) {
               <Form.Control
                 type="email"
                 name="email"
-                placeholder="ivan@abv.bg"
+                placeholder="matti.meikäläinen@gmail.com"
                 onChange={handleChanges}
                 required
               />
