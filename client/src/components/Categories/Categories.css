@@ -1,0 +1,51 @@
+#categories {
+  text-align: center;
+  padding: 2%;
+}
+
+#categories a button {
+  margin-bottom: 5px;
+}
+#categories svg {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+#family > svg {
+  color: orange;
+}
+
+#office > svg {
+  color: mediumpurple;
+}
+
+#pet > svg {
+  color: chocolate;
+}
+
+#furniture > svg {
+  color: #f95a5a;
+}
+
+#phone > svg {
+  color: cyan;
+}
+
+#clothing > svg {
+  color: #f57ecb;
+}
+
+#garden > svg {
+  color: #5aeb5a;
+}
+
+#dropdown-sort {
+  padding-bottom: 20px;
+}
+#dropdown-sort button svg {
+  font-size: 10pt;
+}
+#dropdown-sort button {
+  border: 1px solid gray;
+  width: 80px;
+}

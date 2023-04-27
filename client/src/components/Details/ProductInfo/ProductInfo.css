@@ -1,0 +1,25 @@
+.tab-content {
+  padding-top: 20px;
+}
+
+#heartIconDetails svg {
+  font-size: 30pt;
+  cursor: pointer;
+  margin-top: 26px;
+  color: crimson;
+}
+
+.product-info-heading {
+  margin-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#details-footer {
+  text-align: center;
+}
+
+#detailsProduct img {
+  height: 400px;
+  object-fit: contain;
+}

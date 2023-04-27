@@ -1,0 +1,35 @@
+article img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.chat-selected-header {
+  border-bottom: 1px solid gray;
+}
+
+.me {
+  text-align: right;
+  margin: 20px;
+}
+
+.me .message {
+  text-align: right;
+  background: lightblue;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid gray;
+}
+
+.not-me {
+  margin: 20px;
+}
+
+.not-me .message {
+  text-align: left;
+  padding: 10px;
+  border-radius: 100px;
+  background-color: greenyellow;
+  border: 1px solid gray;
+}

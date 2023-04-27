@@ -1,0 +1,32 @@
+#avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+#profile-head {
+  background: linear-gradient(white, lightblue);
+}
+
+.profile-row {
+  justify-content: center;
+}
+
+#aside {
+  border-right: 1px solid black;
+  margin-top: 55px;
+}
+
+#aside button {
+  width: 130px;
+  margin-bottom: 15px;
+}
+
+#edit-profile-icons {
+  font-size: 30pt;
+}
+
+.col-sm-12 {
+  text-align: center;
+}

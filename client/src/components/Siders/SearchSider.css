@@ -1,0 +1,21 @@
+#sider {
+  background-image: url("https://www.shutterstock.com/image-vector/people-flea-market-vector-illustration-260nw-1811048776.jpg");
+  background-position: center;
+  height: 240px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 90px;
+}
+
+#sider > input {
+  border-radius: 90px;
+  font-size: 19pt;
+  background-image: url("https://res.cloudinary.com/silenceiv/image/upload/v1616775441/search-icon_i5dy7o.png");
+  background-repeat: no-repeat;
+  height: 45px;
+  width: auto;
+  padding-left: 50px;
+  background-position: left;
+  background-size: 25px;
+  background-position-x: 14px;
+}
