@@ -17,7 +17,7 @@ import Messages from "./Pages/Messages";
 import mongoose from "mongoose";
 
 mongoose.connect(
-  process.env.DATABASE_URL || "mongodb://localhost/Fullstack-market"
+  process.env.DATABASE_URL || "mongodb://localhost/MarketplaceLopputyo"
 );
 function App() {
   return (
