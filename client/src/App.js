@@ -16,9 +16,6 @@ import Error404 from "./Pages/Error404";
 import Messages from "./Pages/Messages";
 import mongoose from "mongoose";
 
-mongoose.connect(
-  process.env.DATABASE_URL || "mongodb://localhost/MarketplaceLopputyo"
-);
 function App() {
   return (
     <>
