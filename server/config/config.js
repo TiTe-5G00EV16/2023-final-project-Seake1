@@ -2,7 +2,7 @@ const config = {
   //setting configs for DB (mongodb and cloudinary)
   PORT: process.env.PORT || 5000,
   DB_CONNECTION:
-    "mongodb+srv://christianeriksson2:Oliphant190@marketplacelopputyo.yredlb6.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://admin:Oliphant190@marketplacelopputyo.yredlb6.mongodb.net/?retryWrites=true&w=majority",
   SECRET: "badumts",
   COOKIE_NAME: "USER_SESSION",
   CLOUDINARY_NAME: "dw4cemovd",

@@ -14,7 +14,6 @@ import CreateSell from "./Pages/CreateSell";
 import EditProfile from "./Pages/EditProfile";
 import Error404 from "./Pages/Error404";
 import Messages from "./Pages/Messages";
-import mongoose from "mongoose";
 
 function App() {
   return (
