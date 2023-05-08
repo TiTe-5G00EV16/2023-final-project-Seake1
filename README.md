@@ -47,9 +47,14 @@ Users sign up and list their goods or contact other sellers in case they want to
 
 
 MongoDB 
+
 Express.js
+
 React
+
 Node.js
+
 Cloudinary
+
 React-Bootstrap
 
