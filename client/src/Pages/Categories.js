@@ -22,9 +22,8 @@ function Categories({ match }) {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(true);
   const [sort, setSort] = useState("oldest");
-
+  //selecting category
   useEffect(() => {
-    setPage(1);
     setLoading(true);
     setQuery("");
     getAll(1, currentCategory)
@@ -61,19 +60,12 @@ function Categories({ match }) {
   return (
     <>
       <div id="sider">
-        <input
-          className="col-lg-6"
-          type="text"
-          placeholder="Search..."
-          name="search"
-          value={query}
-          onChange={handleSearch}
-        />
+        <input placeholder="Search.." value={query} onChange={handleSearch} />
       </div>
       <CategoriesNav />
       <div className="container">
         <Dropdown id="dropdown-sort">
-          <Dropdown.Toggle variant="light" id="dropdown-basic">
+          <Dropdown.Toggle variant="primary" id="dropdown-basic">
             Sort <BiSort />
           </Dropdown.Toggle>
           <Dropdown.Menu>

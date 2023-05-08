@@ -15,11 +15,17 @@
   padding-bottom: 20px;
 }
 
-#details-footer {
+.tab-content {
   text-align: center;
 }
 
 #detailsProduct img {
   height: 400px;
   object-fit: contain;
+}
+.row {
+  text-align: center;
+}
+.span {
+  text-align: center;
 }

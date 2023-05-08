@@ -8,9 +8,11 @@ import {
   Col,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { RiMessage3Fill } from "react-icons/ri";
-import { GrEdit } from "react-icons/gr";
-import { MdArchive } from "react-icons/md";
+import {
+  RiMessage2Fill,
+  RiInboxArchiveFill,
+  RiEdit2Fill,
+} from "react-icons/ri";
 import { BsFillPersonFill } from "react-icons/bs";
 import { MdEmail, MdPhoneAndroid } from "react-icons/md";
 import { FaSellsy } from "react-icons/fa";
@@ -53,8 +55,7 @@ function Aside({ params, history }) {
   return (
     <aside>
       <div className="product-details-seller">
-        <div id="priceLabel" className="col-lg-12">
-          <h4 id="product-price-heading">Product Price </h4>
+        <div>
           {params.isSeller && (
             <>
               <OverlayTrigger placement="top" overlay={<Tooltip>Edit</Tooltip>}>
@@ -62,16 +63,13 @@ function Aside({ params, history }) {
                   <Link
                     to={`/categories/${params.category}/${params._id}/edit`}
                   >
-                    <GrEdit />
+                    <RiEdit2Fill />
                   </Link>
                 </span>
               </OverlayTrigger>
-              <OverlayTrigger
-                placement="top"
-                overlay={<Tooltip>Archive</Tooltip>}
-              >
+              <OverlayTrigger overlay={<Tooltip>Archive</Tooltip>}>
                 <span id="archive-icon" onClick={handleShowArchive}>
-                  <MdArchive />
+                  <RiInboxArchiveFill />
                 </span>
               </OverlayTrigger>
             </>
@@ -84,13 +82,13 @@ function Aside({ params, history }) {
           <>
             {!params.isSeller && (
               <Button
-                variant="dark"
-                className="col-lg-10"
+                variant="primary "
+                className="col-sm-4"
                 id="btnContact"
                 onClick={handleShow}
               >
-                <RiMessage3Fill />
                 Contact Seller
+                <RiMessage2Fill />
               </Button>
             )}
             <Link to={`/profile/${params.sellerId}`}>
@@ -108,14 +106,14 @@ function Aside({ params, history }) {
                   <MdPhoneAndroid /> {params.phoneNumber}
                 </p>
                 <p>
-                  <FaSellsy /> {params.createdSells} sells in total
+                  <FaSellsy /> {params.createdSells} total sells
                 </p>
               </Col>
             </Link>
           </>
         ) : (
           <p id="guest-msg">
-            <Link to="/auth/login">Sign In</Link> now to contact the seller!
+            <Link to="/auth/login">Sign In</Link> to contact the seller!
           </p>
         )}
       </div>
@@ -124,22 +122,13 @@ function Aside({ params, history }) {
           <Modal.Title>Message</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
-            <Form.Group>
-              <Form.Control
-                as="textarea"
-                name="textarea"
-                onChange={handleMsgChange}
-                rows={3}
-              />
-            </Form.Group>
-          </Form>
+          <Form.Control as="textarea" onChange={handleMsgChange} rows={3} />
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="dark" onClick={onMsgSent}>
+          <Button variant="primary " onClick={onMsgSent}>
             Send
           </Button>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="dark  " onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>
@@ -150,11 +139,11 @@ function Aside({ params, history }) {
           <Modal.Title>Are you sure you want to archive this item?</Modal.Title>
         </Modal.Header>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseArchive}>
-            Close
-          </Button>
           <Button variant="success" onClick={handleSubmit}>
             Archive
+          </Button>
+          <Button variant="dark " onClick={handleCloseArchive}>
+            Close
           </Button>
         </Modal.Footer>
       </Modal>

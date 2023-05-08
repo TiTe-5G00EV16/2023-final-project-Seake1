@@ -65,27 +65,6 @@ function Register({ history }) {
                 onChange={handleChanges}
                 required
               />
-              <Form.Text muted>
-                The name can be your real one or a username.
-              </Form.Text>
-            </Form.Group>
-
-            <Form.Group
-              as={Col}
-              controlId="formGridGender"
-              className="col-lg-4"
-            >
-              <Form.Label>Gender</Form.Label>
-              <Form.Control
-                as="select"
-                defaultValue="not specified"
-                name="gender"
-                onChange={handleChanges}
-              >
-                <option>male</option>
-                <option>female</option>
-                <option>not specified</option>
-              </Form.Control>
             </Form.Group>
           </Form.Row>
           <Form.Row>
@@ -98,9 +77,6 @@ function Register({ history }) {
                 onChange={handleChanges}
                 required
               />
-              <Form.Text muted>
-                Phone Number needs to be a valid number.
-              </Form.Text>
             </Form.Group>
           </Form.Row>
           <Form.Row>
@@ -125,12 +101,9 @@ function Register({ history }) {
                 onChange={handleChanges}
                 required
               />
-              <Form.Text muted>
-                Your password must be 8-20 characters long
-              </Form.Text>
             </Form.Group>
             <Form.Group className="col-lg-6">
-              <Form.Label>Reepeat Password *</Form.Label>
+              <Form.Label>Repeat Password *</Form.Label>
               <Form.Control
                 type="password"
                 name="repeatPassword"
@@ -141,11 +114,15 @@ function Register({ history }) {
             </Form.Group>
           </Form.Row>
           {loading ? (
-            <Button className="col-lg-12 btnAuth" variant="dark" disabled>
+            <Button variant="primary " disabled>
               wait... <Spinner animation="border" />
             </Button>
           ) : (
-            <Button variant="dark" className="col-lg-12 btnAuth" type="submit">
+            <Button
+              variant="primary"
+              className="col align-self-center"
+              type="submit"
+            >
               Sign Up
             </Button>
           )}

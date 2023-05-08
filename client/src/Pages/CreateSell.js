@@ -69,7 +69,7 @@ class AddProduct extends Component {
       <>
         <SimpleSider />
         <div className="container">
-          <h1 className="heading">Add a new listing</h1>
+          <h1 className="heading">Add new listing</h1>
           <Form onSubmit={this.onSubmitHandler}>
             {this.state.alertShow && (
               <Alert

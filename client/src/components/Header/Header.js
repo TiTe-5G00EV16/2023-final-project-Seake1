@@ -8,12 +8,8 @@ import {
   Tooltip,
 } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import {
-  BsFillPersonFill,
-  BsFillEnvelopeFill,
-  BsFillPlusCircleFill,
-} from "react-icons/bs";
-import { IoLogOut } from "react-icons/io5";
+import { BsPerson, BsEnvelope, BsFillPlusCircleFill } from "react-icons/bs";
+import { BiLogOut } from "react-icons/bi";
 import "./Header.css";
 function Header() {
   const { userData, setUserData } = useContext(Context);
@@ -21,23 +17,19 @@ function Header() {
   return (
     <Navbar collapseOnSelect bg="light">
       <div className="container">
-        <Navbar.Brand>
-          <NavLink className="navbar-brand" to="/">
-            Tori 5.9...
-          </NavLink>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <NavLink className="navbar-brand" to="/">
+          Tori 5.9.1
+        </NavLink>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">{}</Nav>
+          <Nav className="mx-auto">{}</Nav>
           {userData ? (
             <Nav>
-              <NavLink className="nav-item" id="addButton" to="/add-product">
+              <NavLink id="addButton" to="/add-product">
                 <OverlayTrigger
-                  key="bottom"
                   placement="bottom"
                   overlay={
-                    <Tooltip id={`tooltip-bottom`}>
-                      <strong>List a item</strong>
+                    <Tooltip>
+                      <strong>List item</strong>
                     </Tooltip>
                   }
                 >
@@ -56,12 +48,12 @@ function Header() {
                   className="dropdown-item"
                   to={`/profile/${userData._id}`}
                 >
-                  <BsFillPersonFill />
+                  <BsPerson />
                   Profile
                 </NavLink>
 
                 <NavLink className="dropdown-item" to="/messages">
-                  <BsFillEnvelopeFill />
+                  <BsEnvelope />
                   Messages
                 </NavLink>
                 <NavDropdown.Divider />
@@ -73,18 +65,17 @@ function Header() {
                     setUserData(null);
                   }}
                 >
-                  <IoLogOut />
+                  <BiLogOut />
                   Log out
                 </NavLink>
               </NavDropdown>
             </Nav>
           ) : (
             <Nav>
-              <NavLink className="nav-item" id="nav-sign-in" to="/auth/login">
+              <NavLink id="nav-sign-in" to="/auth/login">
                 Sign In
               </NavLink>
               <NavLink //if user not logged in is suggested to sign in
-                className="nav-item"
                 id="nav-sign-up"
                 to="/auth/register"
               >

@@ -92,9 +92,9 @@ function EditProfile({ history }) {
 
   return (
     <>
-      <div id="profile-head">
+      <div>
         <div className="container">
-          <form className="col-lg-12">
+          <form>
             {alertShow && (
               <Alert
                 variant="danger"
@@ -104,8 +104,8 @@ function EditProfile({ history }) {
                 <p>{error}</p>
               </Alert>
             )}
-            <Row className="profile-row">
-              <Col lg={3} md={5} sm={12}>
+            <Row>
+              <Col>
                 <label htmlFor="file-upload" className="custom-file-upload">
                   <OverlayTrigger
                     placement="bottom"
@@ -121,7 +121,7 @@ function EditProfile({ history }) {
                   onChangeCapture={handleChanges}
                 />
               </Col>
-              <Col lg={4} md={3} sm={12}>
+              <Col>
                 <p>
                   <BsFillPersonFill />{" "}
                   <input
@@ -160,7 +160,7 @@ function EditProfile({ history }) {
                   <>
                     <OverlayTrigger
                       placement="bottom"
-                      overlay={<Tooltip> Save changes</Tooltip>}
+                      overlay={<Tooltip> Save</Tooltip>}
                     >
                       <span onClick={handleSave}>
                         <TiTick />
@@ -168,7 +168,7 @@ function EditProfile({ history }) {
                     </OverlayTrigger>
                     <OverlayTrigger
                       placement="bottom"
-                      overlay={<Tooltip>Discard changes </Tooltip>}
+                      overlay={<Tooltip>Discard</Tooltip>}
                     >
                       <span onClick={handleDiscard}>
                         <AiFillCloseSquare />
@@ -183,7 +183,7 @@ function EditProfile({ history }) {
       </div>
       <div className="container">
         <Row>
-          <Col lg={2} sm={12} id="aside">
+          <Col id="aside">
             <Button disabled variant="dark" id="active-sells">
               Active Sells
             </Button>{" "}

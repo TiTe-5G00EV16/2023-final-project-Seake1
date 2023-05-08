@@ -4,7 +4,7 @@ import { Col, Row, Button, Form, Modal } from "react-bootstrap";
 import { BsFillPersonFill } from "react-icons/bs";
 import { MdEmail, MdPhoneAndroid } from "react-icons/md";
 import { FaSellsy } from "react-icons/fa";
-import { RiMessage3Fill } from "react-icons/ri";
+import { BiMessageAlt } from "react-icons/bi";
 import { createChatRoom } from "../../services/messagesData";
 //Gather seller profile data
 function SellerProfile({ params, history }) {
@@ -28,8 +28,8 @@ function SellerProfile({ params, history }) {
   return (
     //Seller information and button to contact seller.
     <>
-      <div id="profile-head">
-        <div className="container">
+      <div>
+        <div>
           <Row className="profile-row">
             <img id="avatar" alt="avatar" src={params.avatar} />
 
@@ -50,11 +50,11 @@ function SellerProfile({ params, history }) {
             <Col lg={3}>
               <Button
                 variant="primary"
-                className="col-lg-8"
+                className="col-sm-5"
                 id="btnContact"
                 onClick={handleShow}
               >
-                <RiMessage3Fill />
+                <BiMessageAlt />
                 Contact Seller
               </Button>
             </Col>
@@ -63,7 +63,7 @@ function SellerProfile({ params, history }) {
       </div>
       <div className="container">
         <Row>
-          <Col lg={12}>
+          <Col>
             <ActiveSells params={params} />
           </Col>
         </Row>
@@ -75,12 +75,7 @@ function SellerProfile({ params, history }) {
         <Modal.Body>
           <Form>
             <Form.Group>
-              <Form.Control
-                as="textarea"
-                name="textarea"
-                onChange={handleMsgChange}
-                rows={4}
-              />
+              <Form.Control as="textarea" onChange={handleMsgChange} rows={4} />
             </Form.Group>
           </Form>
         </Modal.Body>
@@ -88,7 +83,7 @@ function SellerProfile({ params, history }) {
           <Button variant="primary" onClick={onMsgSent}>
             Send
           </Button>
-          <Button variant="danger " onClick={handleClose}>
+          <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>

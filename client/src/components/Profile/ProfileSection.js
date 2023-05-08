@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import { BsFillPersonFill } from "react-icons/bs";
 import { MdEmail, MdPhoneAndroid } from "react-icons/md";
 import { FaSellsy } from "react-icons/fa";
-import { GrEdit } from "react-icons/gr";
+import { BiMessageAltEdit } from "react-icons/bi";
 //Setting data on profile page.
 function ProfileSection({ params }) {
   return (
@@ -27,7 +27,7 @@ function ProfileSection({ params }) {
           </Col>
           <span id="edit-icon">
             <Link to={`/profile/${params._id}/edit`}>
-              <GrEdit />
+              <BiMessageAltEdit />
             </Link>
           </span>
         </Row>

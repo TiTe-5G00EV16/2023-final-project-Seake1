@@ -13,7 +13,6 @@ function Edit({ match, history }) {
   const productId = match.params.id;
 
   useEffect(() => {
-    window.scrollTo(0, 0);
     getSpecific(productId)
       .then((res) => setProduct(res))
       .catch((err) => console.log(err));
@@ -77,7 +76,7 @@ function Edit({ match, history }) {
     <>
       <SimpleSider />
       <div className="container">
-        <h1 className="heading">Edit product</h1>
+        <h1>Edit product</h1>
         <Form onSubmit={onSubmitHandler}>
           {alertShow && (
             <Alert
@@ -105,7 +104,7 @@ function Edit({ match, history }) {
               <Form.Label>Price</Form.Label>
               <Form.Control
                 type="number"
-                step="0.01"
+                step="0.5"
                 placeholder="Price"
                 name="price"
                 value={product.price}

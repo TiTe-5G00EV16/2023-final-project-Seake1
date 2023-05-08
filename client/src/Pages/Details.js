@@ -27,10 +27,10 @@ function Details({ match, history }) {
           <>
             <Breadcrumb params={product} />
             <Row>
-              <Col lg={8} id="detailsProduct">
+              <Col id="detailsProduct">
                 <ProductInfo params={product} />
               </Col>
-              <Col lg={4}>
+              <Col>
                 <Aside params={product} history={history} />
               </Col>
             </Row>

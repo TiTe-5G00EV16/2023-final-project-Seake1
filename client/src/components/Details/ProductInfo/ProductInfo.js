@@ -39,27 +39,23 @@ function ProductInfo({ params }) {
   //Changing the heart icon depending if user wishlisted the item or not.
   return (
     <>
-      <Image className="" src={params.image} rounded />
+      <Image src={params.image} />
       <Row>
-        <h1 className="  product-info-heading">{params.title}</h1>
-        <span
-          id="heartIconDetails"
-          className=" col-sm-1"
-          onClick={onHearthClick}
-        >
+        <h1 className="col-sm-12">{params.title}</h1>
+        <span id="heartIconDetails" className=" col-lg" onClick={onHearthClick}>
           {params.isAuth && (
             <>
               {!wish ? (
                 <OverlayTrigger
                   placement="top"
-                  overlay={<Tooltip>Add to Wishlist</Tooltip>}
+                  overlay={<Tooltip>Wishlist</Tooltip>}
                 >
                   <BsHeart />
                 </OverlayTrigger>
               ) : (
                 <OverlayTrigger
                   placement="top"
-                  overlay={<Tooltip>Remove from Wishlist</Tooltip>}
+                  overlay={<Tooltip>Remove Wishlist</Tooltip>}
                 >
                   <BsHeartFill />
                 </OverlayTrigger>
@@ -68,14 +64,12 @@ function ProductInfo({ params }) {
           )}
         </span>
       </Row>
-      <div id="detailsCardText" className="col-lg-12">
-        <Tabs defaultActiveKey="details" transition={false}>
-          <Tab eventKey="details" title="Details" id="tab-details">
+      <div id="detailsCardText">
+        <Tabs defaultActiveKey="details">
+          <Tab eventKey="details">
             {params.description}
             <hr />
-            <p id="details-footer" className="text-muted">
-              Product listed at {params.addedAt}
-            </p>
+            <p id="details-footer">Product listed at {params.addedAt}</p>
           </Tab>
           {}
         </Tabs>

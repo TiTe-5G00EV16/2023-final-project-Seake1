@@ -6,7 +6,6 @@ import ArchivedSells from "../components/Profile/Sells/ArchivedSells";
 import SellerProfile from "../components/Profile/SellerProfile";
 import { getUserById } from "../services/userData";
 import { Col, Row, Button } from "react-bootstrap";
-
 import "../components/Profile/Profile.css";
 
 function Profile({ match, history }) {
@@ -34,7 +33,6 @@ function Profile({ match, history }) {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);
     getUserById(match.params.id)
       .then((res) => setUser(res.user))
       .catch((err) => console.log(err));
@@ -47,7 +45,7 @@ function Profile({ match, history }) {
           <ProfileSection params={user} />
           <div className="container">
             <Row>
-              <Col lg={2} sm={12} id="aside">
+              <Col id="aside">
                 <Button
                   variant="success"
                   id="active-sells"

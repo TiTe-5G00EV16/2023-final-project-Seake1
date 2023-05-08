@@ -19,68 +19,68 @@ function CategoriesNav() {
   return (
     <div className="container" id="categories">
       <Link to="/categories/all">
-        <Button variant="dark" id="all">
+        <Button variant="info " id="all">
           <TiSortAlphabetically />
           All
         </Button>{" "}
       </Link>
       <Link to="/categories/family">
-        <Button variant="dark" id="family">
+        <Button variant="info " id="family">
           <GiFamilyHouse />
           Family
         </Button>{" "}
       </Link>
       <Link to="/categories/fitness">
-        <Button variant="dark" id="fitness">
+        <Button variant="info " id="fitness">
           <GiWeightLiftingUp />
           Fitness & Sports
         </Button>{" "}
       </Link>
       <Link to="/categories/pet">
-        <Button variant="dark" id="pet">
+        <Button variant="info " id="pet">
           <GiSittingDog />
           Pet Supplies
         </Button>{" "}
       </Link>
       <Link to="/categories/office">
-        <Button variant="dark" id="office">
+        <Button variant="info " id="office">
           <GiOfficeChair />
           Office Products
         </Button>{" "}
       </Link>
       <Link to="/categories/furniture">
-        <Button variant="dark" id="furniture">
+        <Button variant="info " id="furniture">
           <GiSofa />
           Furniture
         </Button>{" "}
       </Link>
       <Link to="/categories/car">
-        <Button variant="dark" id="car">
+        <Button variant="info " id="car">
           <GiSteeringWheel />
           Vehicles
         </Button>{" "}
       </Link>
       <Link to="/categories/phone">
-        <Button variant="dark" id="phone">
+        <Button variant="info " id="phone">
           <GiConsoleController />
           Electronics
         </Button>{" "}
       </Link>
 
       <Link to="/categories/clothing">
-        <Button variant="dark" id="clothing">
+        <Button variant="info  " id="clothing">
           <GiPoloShirt />
           Clothing & Accessories
         </Button>{" "}
       </Link>
       <Link to="/categories/hobbies">
-        <Button variant="dark" id="hobbies">
+        <Button variant="info  " id="hobbies">
           <GiSoccerBall />
           Hobbies
         </Button>{" "}
       </Link>
       <Link to="/categories/garden">
-        <Button variant="dark" id="garden">
+        <Button variant="info   " id="garden">
           <GiSunflower />
           Garden
         </Button>{" "}

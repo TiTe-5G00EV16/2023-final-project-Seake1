@@ -37,16 +37,14 @@ function DisabledCard({ params, history }) {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>
-            Are you sure you want to make this item active?
-          </Modal.Title>
+          <Modal.Title>Want to make this item active?</Modal.Title>
         </Modal.Header>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
           <Button variant="success" onClick={handleSubmit}>
             Make Active
+          </Button>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
           </Button>
         </Modal.Footer>
       </Modal>
