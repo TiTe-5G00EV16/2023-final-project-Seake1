@@ -11,13 +11,11 @@ Backend link: https://final-project-seake1.onrender.com
 cd server
 ```
 
-- Install all needed packages
 
 ```bash
 npm install
 ```
 
-- Run the server
 
 ```bash
 npm start
@@ -29,13 +27,11 @@ The server will run on http://localhost:5000/
 cd client
 ```
 
-- Install all needed packages
 
 ```bash
 npm install
 ```
 
-- And run the application
 
 ```bash
 npm start
