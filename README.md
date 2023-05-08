@@ -44,3 +44,12 @@ The app will run on http://localhost:3000/
 
 
 Users sign up and list their goods or contact other sellers in case they want to to buy it. They can add products to Wishlist, archive their sells or unarchive them if they want to be public again.
+
+
+MongoDB 
+Express.js
+React
+Node.js
+Cloudinary
+React-Bootstrap
+
