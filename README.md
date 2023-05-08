@@ -5,6 +5,9 @@ Web Programming 2023 - Final Project
 
 Frontend link: https://tori5-9online.onrender.com/
 
+Struggling with database on backend side, if not loading have to run locally with cloning project and following instructions under.
+(update cant find fix for database problem so deploying is a problem, testing has to be done locally.)
+
 Backend link: https://final-project-seake1.onrender.com
 
 ```bash
