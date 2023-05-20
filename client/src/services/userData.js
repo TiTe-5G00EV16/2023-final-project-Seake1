@@ -1,4 +1,5 @@
-const baseUrl = "http://localhost:5000";
+//const baseUrl = "http://localhost:5000";
+const baseUrl = "https://final-project-seake1.onrender.com";
 //Register method.
 export async function registerUser(userData) {
   return (
