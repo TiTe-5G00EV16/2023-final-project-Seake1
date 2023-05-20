@@ -1,4 +1,4 @@
-const baseUrl = "https://final-project-seake1.onrender.com";
+const baseUrl = "http://localhost:10000";
 //Creating chat room
 export async function createChatRoom(receiver, message) {
   return (

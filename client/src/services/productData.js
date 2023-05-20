@@ -1,4 +1,4 @@
-const baseUrl = "https://final-project-seake1.onrender.com";
+const baseUrl = "http://localhost:10000";
 //Gathering all categories to all category.
 export async function getAll(page, category, query) {
   if (query !== "" && query !== undefined) {
