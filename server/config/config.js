@@ -1,6 +1,6 @@
 const config = {
   //setting configs for DB (mongodb and cloudinary)
-  PORT: process.env.PORT || 5000,
+  PORT: process.env.PORT || 10000,
   DB_CONNECTION:
     "mongodb+srv://admin:Oliphant190@marketplacelopputyo.yredlb6.mongodb.net/?retryWrites=true&w=majority",
   SECRET: "badumts",
